@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Table</h1>
+            <div id="form">
+                <form onsubmit="table(); return false" >
+                    <label for="inputNum">Enter a number to print table</label>
+                    <input required type="number" name="" id="inputNum"> <br> <br>
+                    <label for="multiplierNum">Enter Multiplier Number</label>
+                    <input required type="number" name="" id="multiplierNum"> <br> <br>
+                    <button type="submit">Print Table</button>
+                </form>
+            </div>
+        <div id="printTable"></div>
+    </div>
+    
+    <script>
+        function table() {
+        let num = Number (document.querySelector("#inputNum").value)
+        let multiplierNum = Number (document.querySelector("#multiplierNum").value)
+        let printTable = "";
+        for  (let i = 0; i < multiplierNum; i++ ){
+         printTable = (`${printTable} <p> ${num} x ${i + 1} = ${num * (i + 1)}</p>`);
+        }
+        document.getElementById("printTable").innerHTML= printTable;
+    }
+    
+    </script>
+</body>
+</html>

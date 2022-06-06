@@ -1,0 +1,21 @@
+body {
+    background-color: cornsilk;
+}
+h1 {
+    width: 150px;
+    height: 50px;
+    background-color: crimson;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 20px;
+    color: cornsilk;
+    
+}
+form{
+    text-align: center;
+    margin-top: 10px;
+}
+#printTable{
+    text-align: center;
+}
